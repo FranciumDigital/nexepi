@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0UsWVhC1GmE=",
+  "dgSpecHash": "OUWlGZJRHu4=",
   "success": true,
-  "projectFilePath": "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api\\nexepi-api.csproj",
+  "projectFilePath": "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\desbo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
     "C:\\Users\\desbo\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"

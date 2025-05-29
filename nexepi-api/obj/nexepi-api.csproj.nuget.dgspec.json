@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api\\nexepi-api.csproj": {}
+    "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api.csproj": {}
   },
   "projects": {
-    "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api\\nexepi-api.csproj": {
+    "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api\\nexepi-api.csproj",
+        "projectUniqueName": "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api.csproj",
         "projectName": "nexepi-api",
-        "projectPath": "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api\\nexepi-api.csproj",
+        "projectPath": "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api.csproj",
         "packagesPath": "C:\\Users\\desbo\\.nuget\\packages\\",
-        "outputPath": "P:\\Projets\\NEXEPI\\nexepi-api\\nexepi-api\\obj\\",
+        "outputPath": "P:\\Projets\\NEXEPI\\nexepi-api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

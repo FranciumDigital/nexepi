@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5LhxsXonIQ+Rnwyu6qQfhgYPdpn4P2ZS85rJKdcjyWM=",
+  "Source": "nexepi-api",
+  "BasePath": "_content/nexepi-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

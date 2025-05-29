@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: ./nexepi-api
+    ports:
+      - "5176:5176"
+
+  frontend:
+    build: ./nexepi-ui
+    ports:
+      - "5173:80"
