@@ -1,0 +1,6 @@
+@nexepi_api_HostAddress = http://localhost:5176
+
+GET {{nexepi_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
