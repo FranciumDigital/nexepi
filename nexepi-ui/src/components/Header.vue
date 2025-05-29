@@ -12,10 +12,27 @@
       <!-- Lien vers le compte -->
       <router-link to="/account" class="button">
         <span class="material-icons">account_circle</span>
+        <b>{{ user.firstname }} {{ user.lastname }}</b>
       </router-link>
     </div>
   </main>
 </template>
+
+<script>
+export default {
+  name: 'HeaderPage',
+  props: {
+    user: {
+      type: Object,
+      required: false,
+      default: () => ({
+        firstname: 'Robin',
+        lastname: 'Letrange'
+      })
+    }
+  }
+}
+</script>
 
 <style scoped>
 #header-page {
@@ -39,6 +56,17 @@ a {
   margin-right: 0px;
   font-weight: 500;
   font-size: 2.6rem;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-theme-secondary);
+}
+
+b {
+  margin-left: 10px;
+  margin-right: 0px;
+  font-weight: 500;
+  font-size: 1.3rem;
   position: relative;
   text-align: center;
   font-weight: bold;

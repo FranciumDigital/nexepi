@@ -3,6 +3,10 @@ import { createApp, reactive } from 'vue'
 import App from './App.vue'
 import router from './router'
 import functions from './functions'
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://localhost:5176'; // Remplace par l'URL de ton backend
+
 
 const app = createApp(App)
 

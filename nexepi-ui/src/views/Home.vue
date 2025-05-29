@@ -51,7 +51,7 @@ export default {
 		if (this.userToken) {
 			this.isAuthenticated = true;
 		} else {
-			this.isAuthenticated = false;
+			this.isAuthenticated = true;
 		}
 
 		const user = JSON.parse(localStorage.getItem('user'));

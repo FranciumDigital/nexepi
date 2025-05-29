@@ -23,7 +23,7 @@
 			</router-link>
 			<router-link to="/check" class="buttons">
 				<span class="material-icons">check_box</span>
-				<span class="text">Vérifier un EPI</span>
+				<span class="text">Users</span>
 			</router-link>
 			<router-link to="/about" class="buttons">
 				<span class="material-icons">description</span>
