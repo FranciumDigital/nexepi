@@ -65,15 +65,37 @@ export default {
       sortKey: "",
       sortOrders: {
         id: 1,
-        name: 1,
-        description: 1,
+        model: 1,
+        year: 1,
       },
       columns: [
-        { key: "id", label: "ID", width: 100 },
-        { key: "name", label: "Nom", width: 200 },
-        { key: "description", label: "Description", width: 300 },
+        { key: "id", label: "ID", width: 50 },
+        { key: "sn", label: "Numéro de série", width: 100 },
+        { key: "type", label: "Type", width: 100 },
+        { key: "manufacturer", label: "Fabricant", width: 100 },
+        { key: "model", label: "Modèle", width: 200 },
+        { key: "year", label: "Année", width: 50 },
+        { key: "acquisitionDate", label: "Date d'acquisition", width: 150 },
+        { key: "firstUseDate", label: "Date de première utilisation", width: 180 },
+        { key: "maxDiscardDate", label: "Date de réforme max", width: 160 },
+        { key: "discardDate", label: "Date de réforme", width: 150 },
+        { key: "recordDate", label: "Date d'enregistrement", width: 150 },
+        { key: "recordTime", label: "Heure d'enregistrement", width: 130 },
+        { key: "avcRef", label: "Réf. AVC", width: 120 },
+        { key: "companyId", label: "ID Société", width: 100 },
+        { key: "comments", label: "Commentaires", width: 200 },
+        { key: "manualUrl", label: "URL du manuel", width: 200 },
+        { key: "certificationUrl", label: "URL de certification", width: 200 },
+        { key: "photoUrl", label: "URL photo", width: 200 },
+        { key: "status", label: "Statut", width: 50 },
+        { key: "specialConditions", label: "Conditions spéciales", width: 200 },
+        { key: "pricePurchase", label: "Prix d'achat", width: 100 },
+        { key: "priceCurrent", label: "Prix actuel", width: 100 },
+        { key: "materials", label: "Matériaux", width: 200 },
+        { key: "description", label: "Description", width: 200 },
+        { key: "location", label: "Emplacement", width: 150 }
       ],
-      visibleKeys: ["id", "name", "description"],
+      visibleKeys: ["id", "sn", "type", "manufacturer", "model", "year", "status"],
       dropdownOpen: false,
     };
   },
@@ -159,10 +181,10 @@ export default {
   border: 1px solid #ccc;
   margin-top: 2px;
   z-index: 10;
-  max-height: 150px;
+  max-height: 500px;
   overflow-y: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  width: 180px;
+  width: 300px;
   border-radius: 4px;
 }
 

@@ -26,8 +26,8 @@ export default {
       type: Object,
       required: false,
       default: () => ({
-        firstname: 'Robin',
-        lastname: 'Letrange'
+        firstname: 'John',
+        lastname: 'Doe'
       })
     }
   }
