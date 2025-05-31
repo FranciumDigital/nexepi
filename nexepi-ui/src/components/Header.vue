@@ -2,7 +2,7 @@
   <main id="header-page">
     <div class="greetings">
       <!-- Lien NEXEPI -->
-      <a href="/" rel="noopener">NEXEPI</a>
+      <a href="/" rel="noopener">NEXEPI<!--<img src="../../src/assets/logo.png" alt="Logo NEXEPI" class="logo-img" />--></a>
 
       <!-- Bouton pour réafficher le warning -->
       <button @click="$emit('show-warning')" class="warning-btn">
