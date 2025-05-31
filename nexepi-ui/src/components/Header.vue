@@ -5,14 +5,26 @@
       <a href="/" rel="noopener">NEXEPI<!--<img src="../../src/assets/logo.png" alt="Logo NEXEPI" class="logo-img" />--></a>
 
       <!-- Bouton pour réafficher le warning -->
-      <button @click="$emit('show-warning')" class="warning-btn">
+      <!--<button @click="$emit('show-warning')" class="warning-btn">
         <span class="material-icons">warning</span>
-      </button>
+      </button> -->
 
-      <!-- Lien vers le compte -->
+      <!-- Date/heure -->
+      <router-link class="button">
+        <span class="material-icons">schedule</span>
+        <b>{{ date }} {{ heure }}</b>
+      </router-link>
+
+      <!-- Lien vers la société -->
+      <router-link to="/companie" class="button">
+        <span class="material-icons">apartment</span>
+        <c>{{ company }}</c>
+      </router-link>
+
+      <!-- Lien vers l'utilisateur -->
       <router-link to="/account" class="button">
         <span class="material-icons">account_circle</span>
-        <b>{{ user.firstname }} {{ user.lastname }}</b>
+        <c>{{ user.firstname }} {{ user.lastname }}</c>
       </router-link>
     </div>
   </main>
@@ -24,14 +36,34 @@ export default {
   props: {
     user: {
       type: Object,
-      required: false,
       default: () => ({
         firstname: 'John',
         lastname: 'Doe'
       })
+    },
+    company: {
+      type: String,
+      default: 'Francium'
+    }
+  },
+  data() {
+    return {
+      date: '',
+      heure: ''
+    };
+  },
+  mounted() {
+    this.updateDateTime();
+    setInterval(this.updateDateTime, 1000); // met à jour chaque seconde
+  },
+  methods: {
+    updateDateTime() {
+      const now = new Date();
+      this.date = now.toLocaleDateString();
+      this.heure = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -62,7 +94,7 @@ a {
   color: var(--color-theme-secondary);
 }
 
-b {
+b,c {
   margin-left: 10px;
   margin-right: 0px;
   font-weight: 500;
@@ -71,6 +103,10 @@ b {
   text-align: center;
   font-weight: bold;
   color: var(--color-theme-secondary);
+}
+
+c:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -85,26 +121,6 @@ b {
   border-radius: 5px;
 }
 
-.warning-btn {
-  display: flex;
-  border: none;
-  align-items: center;
-  cursor: pointer;
-  
-  font-size: 3rem;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: var(--color-theme-secondary);
-  color: var(--color-theme-primary);
-}
-
-.warning-btn:hover {
-  background-color: var(--color-theme-primary);
-  color: var(--color-theme-secondary);
-  border-radius: 5px;
-  transition: color, background-color 0.3s ease-in-out;
-}
-
 @media (max-width: 400px) {
   a {
     margin-left: 5px;
@@ -114,11 +130,6 @@ b {
   .material-icons {
     font-size: 2rem;
     border-radius: 5px;
-  }
-
-  .warning-btn {
-    font-size: 2rem;
-    padding: 2px;
   }
 }
 </style>

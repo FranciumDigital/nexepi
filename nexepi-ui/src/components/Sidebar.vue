@@ -13,20 +13,20 @@
 				<span class="material-icons">home</span>
 				<span class="text">Acceuil</span>
 			</router-link>
-			<router-link to="/list" class="buttons">
-				<span class="material-icons">view_list</span>
+			<router-link to="/items/list" class="buttons">
+				<span class="material-icons">list_alt</span>
 				<span class="text">Liste des EPI</span>
 			</router-link>
-			<router-link to="/add" class="buttons">
-				<span class="material-icons">add_box</span>
+			<router-link to="/items/add" class="buttons">
+				<span class="material-icons">add</span>
 				<span class="text">Ajouter un EPI</span>
 			</router-link>
-			<router-link to="/check" class="buttons">
-				<span class="material-icons">check_box</span>
-				<span class="text">Users</span>
+			<router-link to="/users" class="buttons">
+				<span class="material-icons">groups</span>
+				<span class="text">utilisateurs</span>
 			</router-link>
 			<router-link to="/about" class="buttons">
-				<span class="material-icons">description</span>
+				<span class="material-icons">help</span>
 				<span class="text">A propos</span>
 			</router-link>
 		</div>

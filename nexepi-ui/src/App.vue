@@ -4,11 +4,7 @@
 
     <div class="main">
       <div class="header_class">
-        <Header @show-warning="showWarning"/>
-      </div>
-
-      <div class="warning_class">
-        <Warning v-show="isWarningVisible" @close-warning="isWarningVisible = false"/>
+        <Header/>
       </div>
 
       <div class="router_class">
@@ -23,16 +19,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Sidebar from './components/Sidebar.vue';
-import Warning from './views/Warning.vue';
-
-const isWarningVisible = ref(localStorage.getItem('isLoggedIn'));
-function showWarning() {
-  isWarningVisible.value = true;
-}
 </script>
 
 <style lang="scss">
