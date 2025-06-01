@@ -69,7 +69,7 @@
               <tr v-for="item in sortedItems" :key="item.id">
                 <td>
                   <span class="material-icons" title="Visualiser les informations détaillées" @click="goToView(item.id)">visibility</span>
-                  <!--<span class="material-icons" title="Modifier" @click="goToEdit(item.id)">edit</span>-->
+                  <span class="material-icons" title="Modifier les informations" @click="goToEdit(item.id)">edit</span>
                   <span class="material-icons" title="Vérifier son état" @click="goToVerify(item.id)">check_circle</span>
                 </td>
               </tr>
@@ -269,7 +269,7 @@ th {
 
 .table-grid {
   display: grid;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 1fr 120px;
   overflow: hidden;
   max-width: 100%;
 }

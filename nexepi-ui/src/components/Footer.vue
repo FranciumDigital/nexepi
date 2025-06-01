@@ -1,8 +1,18 @@
 <template>
   <div class="greetings">
     <h3>
-      <span>© 2025 NEXEPI par Francium Digital. Tous droits réservés.</span>
-      <span>Contact : <a style="font-weight: bold;" href="mailto:letrangerobin@gmail.com">letrangerobin@gmail.com</a></span>
+      <span>
+        © 2025 NEXEPI par
+        <a href="https://www.francium-digital.fr" target="_blank" rel="noopener noreferrer">
+          Francium Digital
+        </a>. Tous droits réservés.
+      </span>
+      <span>
+        Contact :
+        <a href="mailto:letrangerobin@gmail.com">
+          letrangerobin@gmail.com
+        </a>
+      </span>
     </h3>
   </div>
 </template>
@@ -30,7 +40,7 @@ span {
 
 a {
   text-decoration: none;
-  color: var(--color-dark);
+  font-weight: bold;
 }
 
 a:hover {

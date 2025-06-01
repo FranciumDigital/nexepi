@@ -185,12 +185,12 @@
 	font-size: 1.1em;
   }
   
-  .item-details p strong {
+  .item-details p {
 	font-weight: bold;
 	padding: 5px;
   }
   
-  .item-status p strong{
+  .item-status p {
 	font-weight: bold;
 	padding: 5px;
   }

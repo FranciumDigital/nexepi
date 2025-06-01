@@ -167,24 +167,6 @@
 	justify-content: space-between;
 	margin-top: 20px;
   }
-  
-  .edit-button, .close-button {
-	padding: 10px 20px;
-	font-size: 1rem;
-	border: none;
-	border-radius: 8px;
-	cursor: pointer;
-  }
-  
-  .edit-button {
-	background-color: var(--color-theme-primary);
-	color: var(--color-dark);
-  }
-  
-  .close-button {
-	background-color: var(--color-dark);
-	color: var(--color-light);
-  }
 
 
   /* Media query for small screens (mobile devices) */

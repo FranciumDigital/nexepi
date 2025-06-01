@@ -2,9 +2,8 @@
 	<main id="callback-page">
 		<p v-if="success" class="success">Connecté !</p>
 		<p v-else-if="message" :class="{ success: success, error: !success }">{{ message }}</p>
-		<p v-else>En attente de connexion...
-			<div class="spinner"></div>
-		</p>
+		<p v-else>En attente de connexion...</p>
+		<div class="spinner"></div>
 	</main>
 </template>
 

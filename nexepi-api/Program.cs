@@ -1,14 +1,15 @@
+using DotNetEnv;
 using NexepiApi.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Env.Load();
+var connectionString = Environment.GetEnvironmentVariable("DefaultConnection");
+builder.Configuration["ConnectionStrings:DefaultConnection"] = connectionString;
+
 // Assure-toi d’avoir les bons packages pour OpenAPI, sinon commente cette partie
 builder.Services.AddEndpointsApiExplorer(); // souvent utilisé pour Swagger/OpenAPI
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(11, 8)))); // ← adapte à ta version de MariaDB
 
 builder.WebHost.ConfigureKestrel(options =>
 {

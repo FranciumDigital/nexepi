@@ -92,7 +92,7 @@
   font-size: 1.05rem;
 }
 
-.features-list li strong {
+.features-list li {
   color: var(--color-theme-primary);
 }
 

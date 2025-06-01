@@ -7,7 +7,6 @@ namespace NexepiApi.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
-        public DbSet<Item> Items { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<UserOrganization> UserOrganizations { get; set; }

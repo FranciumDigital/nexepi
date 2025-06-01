@@ -1,7 +1,7 @@
 <template>
-	<main id="Item-page">
+	<main id="ItemCheck-page">
 	  <div class="form-container">
-		<h1>Détails de l'élément</h1>
+		<h1>Vérification de l'élément</h1>
   
 		<div v-if="item" class="form">
 		  <div class="item-detail" v-for="(value, key) in formattedItem" :key="key">
@@ -171,7 +171,7 @@
 	border: none;
 	border-radius: 8px;
 	cursor: pointer;
-	transition: color 0.3s ease;
+	transition: color 0.1s ease;
   }
   
   .edit-button {
@@ -186,12 +186,12 @@
   }
   
   .close-button {
-	background-color: var(--color-dark);
-	color: var(--color-light);
+	background-color: var(--color-light);
+	color: var(--color-dark);
   }
 
 .close-button:hover{
-	background-color: var(--color-theme-primary);
-  color: var(--color-theme-secondary);
+	background-color: var(--color-dark);
+  	color: var(--color-light);
 }
   </style>
